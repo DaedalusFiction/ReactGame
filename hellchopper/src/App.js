@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="flex">
         <p>EXPERIENCE HELLCHOPPER!</p>
-        <p>Good job, {myName}</p>
+        <p>Good job, {myName}, you're the best</p>
       </div>
     </div>
   );
