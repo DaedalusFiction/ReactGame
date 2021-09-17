@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 :root {
     --bg-dark: rgb(26, 26, 26);
     --bg-light: rgb(236, 236, 236);
@@ -7,7 +7,13 @@
     --fc-light: rgb(197, 197, 197);
     --fc-accent-dark: #b079d2;
     --fc-accent-light: #e9791e;
+    --ff-header: "Bungee", cursive;
     --ff-accent: 'Pacifico', cursive;
+    --header-text-shadow: 
+        0.025em 0.025em 0 var(--fc-accent-light),
+        0.05em 0.05em 0 blue,
+        0.075em 0.075em 0 red,
+        0.1em 0.1em 0 black;
 }
 
 * {
@@ -98,7 +104,7 @@ ul {
     z-index: -1;
 }
 
-.hero a {
+.hero .flex > a {
     text-align: center;
     margin: 0 auto;
     font-family: var(--ff-accent);
@@ -110,14 +116,49 @@ ul {
     z-index: 2;
 }
 
-.hero a + a {
+.hero .flex > a + a {
     font-size: 2em;
 }
-.hero a + a + a {
+.hero .flex > a + a + a {
     font-size: 1em;
 }
-.hero a + a + a + a {
+.hero .flex > a + a + a + a {
     font-size: .5em;
+}
+
+.topButtons,
+.bottomButtons {
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 2em 0 2em;
+}
+
+.topButtons a,
+.bottomButtons a {
+    color: white;
+    font-family: var(--ff-accent);
+    background: rgba(0, 0, 0, 0);
+    padding: .5em;
+    border-radius: 2em;
+    border: 2px solid white;
+}
+
+.topButtons a:hover,
+.bottomButtons a:hover {
+    transition: 0.05s;
+    transform: scale(1.15);
+}
+
+.topButtons {
+    margin-bottom: auto;
+    padding-top: 3em;
+}
+
+.bottomButtons {
+    margin-top: auto;
+    padding-bottom: 3em;
 }
 
 /* About */
@@ -129,12 +170,12 @@ ul {
 
 
 .about h2 {
-    font-family: var(--ff-accent);
+    font-family: var(--ff-header);
     color: var(--fc-accent-dark);
+    text-shadow: var(--header-text-shadow);
     width: 100%;
     text-align: center;
     font-size: 6em;
-    text-shadow: 0 0 0.125em currentColor;
 }
 
 .about .flex {
