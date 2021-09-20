@@ -10,6 +10,10 @@
     --fc-accent-light: #e9791e;
     --tv-color-1: #C7EF00; 
     --tv-color-2: #D00000;
+    
+    --fs-xl: clamp(3rem, 12vw + 1rem, 6rem);
+    --fs-500: 1.2rem;
+    --fs-400: 1rem;
 
     --ff-header: "Bungee", cursive;
     --ff-accent: 'Pacifico', cursive;
@@ -70,7 +74,6 @@ ul {
 }
 
 .btn {
-    display: block;
     background: var(--fc-accent-light);
     padding: 0.25em 1.25em;
     border-radius: .5em;
@@ -79,7 +82,7 @@ ul {
     font-size: 1.5em;
     color: white;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 50ms;
     border: none;
     box-shadow: .125em .125em .125em #4e340d;
 }
@@ -89,6 +92,7 @@ ul {
     text-shadow: 
     0 0 0.125em currentColor, 
     0 0 0.25em currentColor;
+    transform: scale(1.1);
 }
 
 /* Hero */
@@ -160,7 +164,8 @@ ul {
     color: var(--fc-accent-dark);
     text-shadow: var(--header-text-shadow);
     text-align: center;
-    font-size: min(6em, 14vw);
+    font-size: var(--fs-xl);
+    /* font-size: min(6em, 14vw); */
 }
 
 .about .flex {
@@ -174,7 +179,9 @@ ul {
 }
 
 .about .btn {
+    display: block;
     margin: 0 auto;
+    
 }
 
 .about p {

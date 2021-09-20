@@ -25,7 +25,7 @@ ReactDOM.render(
     <h2>Who We Are</h2>
     <div className="flex">
       <Image image={Amp} alt="Amp" />
-      <p>The Recursions is a super cool alternative cover band located in the heart of Charlottesville, Virginia. We are available for weddings, birthdays, bar/bat mitzvas, graduations, and petting zoos, but not conservative rallies or corporate events.</p>
+      <p>The Recursions is a super cool alternative cover cover band (meaning we only play covers of covers) located in the heart of Charlottesville, Virginia. We are available for weddings, birthdays, bar/bat mitzvas, graduations, and petting zoos, but not conservative rallies or corporate events.</p>
     </div>
     <Button className="btn" text="Request a Gig" />
   </div>
