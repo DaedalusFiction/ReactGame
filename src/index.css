@@ -87,8 +87,6 @@ ul {
     box-shadow: .125em .125em .125em #4e340d;
 }
 
-
-
 .btn:hover {
     /* background: #4e340d; */
     text-shadow: 
@@ -98,9 +96,10 @@ ul {
 
 /* Hero */
 
-.hero {
+.hero .container {
     max-width: 45rem;
     margin: 0 auto;
+    max-height: 100vw;
 }
 
 .hero .flex {
@@ -109,10 +108,9 @@ ul {
     /* background-image: radial-gradient(var(--tv-color-1), var(--tv-color-2)); */
     background-image: linear-gradient( 135deg,  var(--tv-color-1), var(--tv-color-2));
     border-radius: 50% / 10%;
-    height: 100%;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    width: 80%;
     box-shadow: 0 0 2em 1em white;
 }
 .hero .flex::before,
@@ -140,8 +138,9 @@ ul {
 .hero .flex > a {
     text-align: center;
     margin: 0 auto;
+    padding: 3em 0;
     font-family: var(--ff-accent);
-    font-size: 5em;
+    font-size: min(5em, 10vw);
     text-shadow:
     0 0 0.125em currentColor, 
     0 0 0.25em currentColor;

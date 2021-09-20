@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './mediaqueries.css';
 import reportWebVitals from './reportWebVitals';
 import Amp from './images/amp-photo.png';
 import Image from './components/Image';
