@@ -22,10 +22,10 @@ ReactDOM.render(
 
 <section className="about">
   <div className="container">
-    <h2>Who We Are</h2>
+    <h2>Who Are We</h2>
     <div className="flex">
       <Image image={Amp} alt="Amp" />
-      <p>The Recursions is a super cool alternative cover cover band (meaning we only play covers of covers) located in the heart of Charlottesville, Virginia. We are available for weddings, birthdays, bar/bat mitzvas, graduations, and petting zoos, but not conservative rallies or corporate events.</p>
+      <p><strong>The Recursions</strong> is the world's only recursive cover band (meaning that each song we play is technically a cover of the last time we played it). Located in the heart of central Virginia, we are available for weddings, birthdays, bar/bat mitzvas, graduations, and petting zoos, but not conservative rallies or corporate events.</p>
     </div>
     <Button className="btn" text="Request a Gig" />
   </div>
