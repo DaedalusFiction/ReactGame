@@ -16,7 +16,7 @@
     --tv-color-2: #D00000;
     
     
-    --fs-xl: clamp(3rem, 12vw + 1rem, 6rem);
+    --fs-xl: clamp(3rem, 12vw, 6rem);
     --fs-500: 1.2rem;
     --fs-400: 1rem;
 
