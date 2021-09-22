@@ -23,10 +23,11 @@
     
     --ff-accent: 'Pacifico', cursive;
     --ff-header: 'Bungee', serif;
+    --header-color: var(--bg-accent);
     --header-text-shadow:
-        0.025em 0.025em 0 var(--fc-light),
-        0.05em 0.05em 0 var(--tv-color-2),
-        0.075em 0.075em 0 var(--bg-dark);
+        0.025em 0.025em 0 var(--tv-color-1),
+        0.05em 0.05em 0 var(--bg-dark),
+        0.075em 0.075em 0 white;
 }
 
 *,
@@ -63,6 +64,14 @@ ul {
     list-style: none;
 }
 
+input {
+    background: inherit;
+    font-size: inherit;
+    border: none;
+    margin: .5em;
+    border-bottom: 1px solid var(--bg-dark);
+}
+
 .container {
     margin: 0 auto;
     max-width: 60rem;
@@ -74,9 +83,27 @@ ul {
     gap: 1em;
 }
 
+.flex-vertical {
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-accent);
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--bg-dark);
+    background: var(--tv-color-1);
+    max-width: 20em;
+    padding: 1em;
+    margin: 1em auto;
+    box-shadow: 0.25em 0.25em 0.5em var(--bg-dark);
+    border-radius: 10px;
+}
+
 .card--black {
     background: black;
-    border-radius: 5px;
 }
 
 .btn {
@@ -85,7 +112,7 @@ ul {
     border-radius: .5em;
     font-family: var(--ff-accent);
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: white;
     cursor: pointer;
     transition: 50ms;
@@ -99,6 +126,11 @@ ul {
     0 0 0.125em currentColor, 
     0 0 0.25em currentColor;
     transform: scale(1.1);
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
 }
 
 /* Hero */
@@ -167,7 +199,7 @@ ul {
 
 .about h2 {
     font-family: var(--ff-header);
-    color: var(--bg-accent);
+    color: var(--header-color);
     text-align: center;
     font-size: var(--fs-xl);
     text-shadow: var(--header-text-shadow);
@@ -183,7 +215,7 @@ ul {
 
 .about img {
     width: min(25rem, 90vw);
-    box-shadow: 0.25em 0.25em 0.2em var(--bg-dark);
+    box-shadow: 0.25em 0.25em 0.4em var(--bg-dark);
 }
 
 .about .btn {
