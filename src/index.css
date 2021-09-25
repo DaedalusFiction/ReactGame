@@ -4,17 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 
 :root {
-    /* --bg-dark: #441900; */
-    /* --bg-dark: #250310; */
+    
     --bg-dark: #360A14;
     --bg-light: #EBAD25;
     --bg-accent: #F34213;
-    --fc-dark: #4b5043;
-    --fc-light: rgb(197, 197, 197);
-
+    
     --tv-color-1: #C7EF00; 
     --tv-color-2: #D00000;
     
+    --fc-dark: #4b5043;
+    --fc-light: rgb(197, 197, 197);
     
     --fs-xl: clamp(3rem, 12vw, 6rem);
     --fs-500: 1.2rem;
@@ -45,6 +44,10 @@ body {
 
 h1, h2, h3 {
     line-height: 1.1;
+}
+
+p {
+    max-width: 60ch;
 }
 
 section {
@@ -94,7 +97,7 @@ input {
     font-style: italic;
     font-size: 1.25rem;
     color: var(--bg-dark);
-    background: var(--tv-color-1);
+    background: white;
     max-width: 20em;
     padding: 1em;
     margin: 1em auto;
@@ -104,6 +107,7 @@ input {
 
 .card--black {
     background: black;
+    color: white;
 }
 
 .btn {
